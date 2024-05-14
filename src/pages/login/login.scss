@@ -1,0 +1,119 @@
+#login__hero {
+  padding: 100px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form__login-btn {
+  width: 143px;
+  height: 56px;
+  border-radius: 5px;
+  border: 1px solid #db4444;
+  color: white;
+  background: #db4444;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.login__form__btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form__login-btn:hover {
+  color: #db4444;
+  background: white;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.login__form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  input {
+    border: none;
+    outline: none;
+  }
+  .email__input {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+  }
+  .password__input {
+    input {
+      width: 90%;
+      padding-bottom: 10px;
+    }
+    .eye__imges {
+      width: 5%;
+      cursor: pointer;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+  }
+}
+
+.form__login-forget {
+  color: #db4444;
+}
+
+.login__hero__right {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 45%;
+}
+
+.eye-slash {
+  display: none;
+}
+
+.error {
+  color: #db4444;
+  text-align: end;
+  opacity: 0;
+}
+
+.login__hero__left {
+  width: 50%;
+}
+
+.login__hero__left img {
+  width: 100%;
+}
+
+@media (max-width: 1130px) {
+  #login__hero {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .login__hero__left{
+    display: none;
+  }
+  .login__hero__right {
+    width: 100%;
+  }
+}
+@media (max-width: 450px){
+   .login__form__btns{
+    flex-direction: column;
+    gap: 30px;
+   } 
+}
+
+.header__top p{
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}

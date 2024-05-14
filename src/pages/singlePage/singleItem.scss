@@ -1,0 +1,272 @@
+#single__hero {
+  padding: 150px 0px;
+}
+
+.single__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.single__rating {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.content__title {
+  font-size: 30px;
+}
+
+.single__price {
+  font-size: 24px;
+}
+
+.single__content__right {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content__desc {
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  font-size: 15px;
+}
+.single__content__left {
+  width: 45%;
+  img{
+    width: 100%;
+  }
+}
+.self__img {
+  width: 500px;
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.single__content__right__top {
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.single__colours,
+.single__size {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.size {
+  width: 32px;
+  height: 32px;
+  border: 1px solid black;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.size:hover {
+  background: #db4444;
+  border: 1px solid #db4444;
+  color: white;
+}
+
+.content__info__bottom {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.single__btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.counter__btns {
+  display: flex;
+  align-items: center;
+}
+
+.counter__numbers,
+.dec__btn,
+.inc__btn {
+  background: transparent;
+  border: 1px solid black;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dec__btn {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.counter__numbers {
+  width: 80px;
+}
+
+.dec__btn,
+.inc__btn {
+  width: 45px;
+  font-size: 24px;
+  transition: 0.4s;
+}
+
+.dec__btn:hover,
+.inc__btn:hover {
+  background: #db4444;
+  color: white;
+  border-color: #db4444;
+}
+
+.inc__btn {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.single__buy__btn {
+  width: 165px;
+  height: 44px;
+  border-radius: 5px;
+  background: #db4444;
+  color: white;
+  transition: 0.4s;
+  border: 1px solid #db4444;
+}
+
+.single__buy__btn:hover {
+  background: white;
+  color: #db4444;
+}
+.single__like__btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.single__content__right {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+@media (max-width: 1130px) {
+  .single__content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .single__content__left {
+    width: 100%;
+  }
+  .single__content__right {
+    width: 100%;
+  }
+}
+
+.single__loading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 600px;
+  .single__loading__left,
+  .single__loading__right {
+    width: 48%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+}
+
+.single__loading__desc,
+.single__loading__info,
+.single__loading__btns,
+.single__loading__title {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.single__loading__title {
+  height: 100px;
+}
+
+.single__loading__desc {
+  width: 60%;
+  height: 50px;
+}
+
+.single__loading__info {
+  width: 80%;
+  height: 50px;
+}
+
+.single__loading__btns {
+  width: 100%;
+}
+
+@media (max-width: 450px) {
+  .single__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .single__size {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+  }
+}
+
+.top__top__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content__info__top__top,
+.content__info__top__bottom {
+  display: none;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.content__info__top__top {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.content__info__top__bottom {
+  border-radius: 0px 0px 10px 10px;
+}
+
+.content__info__top {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+  .self__img {
+    width: 100%;
+  }
+}

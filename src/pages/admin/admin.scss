@@ -1,0 +1,145 @@
+#admin__hero {
+  padding: 50px 0px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.admin__hero__left {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 30%;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    li {
+      color: gray;
+      transition: 0.4s;
+      cursor: pointer;
+    }
+    li:hover {
+      color: #db4444;
+    }
+  }
+}
+
+.admin__hero__right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px;
+  box-shadow: 0px 0px 10px #eee;
+  border-radius: 10px;
+  h2 {
+    color: #db4444;
+    font-size: 25px;
+  }
+  .admin__form__top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    .name {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      input {
+        border: none;
+        background: #f5f5f5;
+        border-radius: 5px;
+        height: 50px;
+        outline: none;
+        padding: 10px 10px 10px 20px;
+      }
+    }
+  }
+}
+
+.admin__form__bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0px;
+  gap: 20px;
+  input {
+    border: none;
+    outline: none;
+    background: #f5f5f5;
+    border-radius: 5px;
+    height: 50px;
+    padding: 10px 10px 10px 20px;
+  }
+}
+
+.admin__form__btns {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  text-align: end;
+  justify-content: end;
+  .save__changes__btn {
+    width: 214px;
+    height: 56px;
+    border-radius: 5px;
+    background: #db4444;
+    color: white;
+    border: 1px solid #db4444;
+    transition: 0.4s;
+  }
+  .save__changes__btn:hover {
+    background: white;
+    color: #db4444;
+  }
+}
+
+@media (max-width: 1050px) {
+  #admin__hero {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .admin__hero__left {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .admin__hero__right {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .admin__form__top {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 530px) {
+  .admin__hero__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 50px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .korzina__img {
+    display: none;
+  }
+  .admin__form__btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .save__changes__btn {
+    order: 1;
+  }
+  .cancel__link {
+    order: 2;
+  }
+}
